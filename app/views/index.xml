@@ -1,0 +1,15 @@
+<Alloy>
+	<Window class="container">
+		<View id="header">Svti Móvil</View>
+		<View id="content">
+			<Label>Consulta Reservada</Label>
+			<TextField id="booking" color="blue"></TextField>
+			<Button id="consultar" onClick="doClick">Consultar Numero</Button>
+			<Label id="descripcion">---</Label>
+			<Label id="estado_requerida">---</Label>
+			<Label id="estado_tramitado">---</Label>
+			
+		</View>
+		<View id="footer">San Vicente Terminal Internacional S.A.</View>
+	</Window>
+</Alloy>
