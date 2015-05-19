@@ -11,7 +11,11 @@ function doClick(e) {
 			});
 		}
 			
-	 		$.descripcion.text = JSON.stringify(data[i].descripcion);
+			var a = Ti.UI.createAlertDialog();
+	 		a.message=JSON.stringify(data[i].descripcion);
+	 		a.title='Información';
+	 		a.show();
+	 		
 	 		
 	});
 }

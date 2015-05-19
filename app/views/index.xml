@@ -5,7 +5,6 @@
 			<Label>Consulta Reservada</Label>
 			<TextField id="booking" color="blue"></TextField>
 			<Button id="consultar" onClick="doClick">Consultar Numero</Button>
-			<Label id="descripcion">---</Label>
 			
 		</View>
 		<View id="footer">San Vicente Terminal Internacional S.A.</View>
