@@ -12,10 +12,7 @@ function doClick(e) {
 		}
 			
 	 		$.descripcion.text = JSON.stringify(data[i].descripcion);
-	 		$.estado_requerido.text = JSON.stringify(data[i].estado_requerido);
-	 		$.estado_tramitado.text = JSON.stringify(data[i].estado_tramitado);
 	 		
-		
 	});
 }
 
