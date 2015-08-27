@@ -5,7 +5,12 @@
 			<Label>Consulta Reservada</Label>
 			<TextField id="booking" color="blue"></TextField>
 			<Button id="consultar" onClick="doClick">Consultar Numero</Button>
-			
+			<ScrollView backgroundColor="green" width="100%" height="80%" top="5%" showVerticalScrollIndicator="true" layout="vertical">
+				<View backgroundColor="red" width="100%" height="800px" top="0" fontColor="black">GUENA 1</View>
+				<View backgroundColor="yellow" width="100%" height="800px" top="0">GUENA 2</View>
+				<View backgroundColor="black" width="100%" height="800px" top="0">GUENA 3</View>
+				<View backgroundColor="white" width="100%" height="800px" top="0">GUENA 4</View>
+			</ScrollView>
 		</View>
 		<View id="footer">San Vicente Terminal Internacional S.A.</View>
 	</Window>

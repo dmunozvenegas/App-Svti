@@ -1,5 +1,5 @@
 function doClick(e) {
-
+	
 	getBooking($.booking.value, function(items){
 		Ti.API.info(items);
 		var data = [i];
@@ -10,10 +10,13 @@ function doClick(e) {
 					estado_tramitado: items.item(i).getElementsByTagName("estado_tramitado").item(0).textContent
 			});
 		}
-			
-			var a = Ti.UI.createAlertDialog();
+				
+			var a = Ti.UI.createAlertDialog({title: 'Información',
+  											backgroundColor: 'white',
+  											exitOnClose: true,
+  											buttonNames: ['Aceptar'],
+  											fullscreen: false});
 	 		a.message=JSON.stringify(data[i].descripcion);
-	 		a.title='Información';
 	 		a.show();
 	 		
 	 		
@@ -29,7 +32,7 @@ function getBooking(busqueda, callback){
 	// Hacemos el GET al servicio web.
 	xhr.open("GET",url);
  
-	xhr.onload = function() {
+	xhr.onload = function() {										    									     
 		//Los datos se devuelve, inicia analisis
 		var doc = this.responseXML.documentElement;
 		//Comienza a recorrer el arreglo
@@ -39,9 +42,12 @@ function getBooking(busqueda, callback){
 	};
 	//Gestiona en caso de error
 	xhr.onerror = function(e){
-		var a = Ti.UI.createAlertDialog();
-	 	a.message='Error en conexión';
-	 	a.title='Atencion';
+		var a = Ti.UI.createAlertDialog({title: 'Atención',
+  										 backgroundColor: 'white',
+  										 message: 'Error de Conexión',
+  										 exitOnClose: true,
+  										 buttonNames: ['Aceptar'],
+  									     fullscreen: false});
 	 	a.show();
 	 	callback('-1');
 	};

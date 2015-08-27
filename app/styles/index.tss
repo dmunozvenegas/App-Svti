@@ -49,19 +49,7 @@
 	backgroundColor: "#177290"
 }
 
-
-"#descripcion":{
-	top: 5,
-	width: Titanium.UI.FILL,
-	height: 50
-}
-"#estado_requerido":{
-	top: 5,
-	width: Titanium.UI.FILL,
-	height: Titanium.UI.FILL
-}
-"#estado_tramitado":{
-	top: 5,
-	width: Titanium.UI.FILL,
-	height: Titanium.UI.FILL
+"#scrollView":{
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL
 }
